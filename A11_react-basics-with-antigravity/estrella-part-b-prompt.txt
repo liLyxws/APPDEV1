@@ -1,0 +1,9 @@
+Analyze @src\App.css and @src\components\tracks\SongList.css, and redesign the playlist app with a Spotify-inspired, frozen sakura glassmorphism dark theme, following standard modern mobile app design conventions.
+  
+Use a deep dark background (navy-to-plum, not pure black), with frosted glass song cards — background blur, low-opacity white borders, soft rounded corners (14–16px), subtle spacing between cards instead of harsh dividers. Accent colors should mix icy blue and sakura pink tones for hover states play icons, and small UI details. Typography should stay clean and legible: bold white/off-white song titles, muted gray-blue for artist and meta text.
+
+Keep the existing album cover images (crystalSnow.png, takeMeOn.png, theNightt.png) exactly as they are — do not replace them with placeholders, colors, or new graphics. Only adjust their container styling (rounded corners, shadow, sizing) to match the theme.
+
+Create a new small React component called Logo.jsx inside src/components/ that renders an inline SVG snowflake/sakura-petal icon (no external image file), and use it in the Header next to the app name.
+
+Keep everything static and minimalist. Do not add extra files beyond the new Logo component. Do not rename, remove, or reorganize the existing project structure or required files.
