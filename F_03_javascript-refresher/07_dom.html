@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 DOM Manipulation - Cyberpunk Inventory</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            padding: 30px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #161b22;
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+        }
+        h1 { color: #58a6ff; }
+        .stat-box {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            padding: 10px;
+            background: #21262d;
+            border-left: 4px solid #238636;
+            border-radius: 4px;
+        }
+        .stat-box.boosted {
+            border-left-color: #a371f7;
+            color: #d2a8ff;
+        }
+        button {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        button:hover { background-color: #2ea043; }
+        ul { list-style: none; padding: 0; }
+        li {
+            background: #21262d;
+            margin: 6px 0;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cyberpunk Gear Terminal</h1>
+        <div id="combat-power" class="stat-box">Combat Power: 450 AP</div>
+
+        <button id="btn-overclock">Overclock Gear (+150 AP)</button>
+        <button id="btn-add-item">Loot Rare Item</button>
+
+        <h3>Inventory Inventory Cache:</h3>
+        <ul id="inventory-list">
+            <li>Neural Cyberdeck (Mark III)</li>
+            <li>Monowire Whip</li>
+        </ul>
+    </div>
+
+    <!-- DOM Manipulation Script -->
+    <script>
+        // Selecting DOM Elements
+        const powerDisplay = document.querySelector("#combat-power");
+        const btnOverclock = document.getElementById("btn-overclock");
+        const btnAddItem = document.getElementById("btn-add-item");
+        const inventoryList = document.querySelector("#inventory-list");
+
+        let currentPower = 450;
+        const rareItemsPool = ["Nano-Shield Generator", "Subdermal Armor", "Thermal Katana", "EMP Grenade"];
+        let itemIndex = 0;
+
+        // Event Listener 1: Overclock Button
+        btnOverclock.addEventListener("click", () => {
+            currentPower += 150;
+            powerDisplay.textContent = `Combat Power: ${currentPower} AP (OVERCLOCKED)`;
+            powerDisplay.classList.add("boosted");
+        });
+
+        // Event Listener 2: Dynamic List Item Insertion
+        btnAddItem.addEventListener("click", () => {
+            if (itemIndex < rareItemsPool.length) {
+                const newItem = document.createElement("li");
+                newItem.textContent = rareItemsPool[itemIndex];
+                inventoryList.appendChild(newItem);
+                itemIndex++;
+            } else {
+                alert("Inventory capacity reached!");
+            }
+        });
+    </script>
+</body>
+</html>
