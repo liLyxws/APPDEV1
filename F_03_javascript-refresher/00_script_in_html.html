@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Explorer Telemetry - 00 Script in HTML</title>
+</head>
+<body>
+    <h1>Galactic Explorer Station</h1>
+    <p id="status-display">Initializing telemetry systems...</p>
+
+    <!-- Embedded JavaScript Script Tag -->
+    <script>
+        // Demonstration of running JavaScript embedded directly inside HTML
+        const spaceVessel = {
+            callsign: "Astraea-9",
+            fuelLevel: 87.5,
+            warpCoreOnline: true,
+            coordinates: { sector: "Orion-G", grid: "774-B" }
+        };
+
+        function displayTelemetry(vessel) {
+            const statusText = `Vessel: ${vessel.callsign} | Fuel: ${vessel.fuelLevel}% | Sector: ${vessel.coordinates.sector}`;
+            console.log("Telemetry Logged:", statusText);
+            
+            const element = document.getElementById("status-display");
+            if (element) {
+                element.textContent = statusText;
+            }
+        }
+
+        displayTelemetry(spaceVessel);
+    </script>
+</body>
+</html>
