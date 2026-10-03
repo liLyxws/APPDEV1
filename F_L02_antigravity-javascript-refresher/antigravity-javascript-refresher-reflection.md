@@ -60,3 +60,14 @@ After running the file, explain to me:
 3. Why .map() matters before we get to React list rendering.
 
 Reflection: I learned here naman na which array methods change the original array and which return a new one
+
+### 06_control_structures
+Open 06_control_structures.js. The grade checker I wrote has a bug, every score of 70 or higher is printing "C" instead of the correct letter.
+
+First, reproduce the output so I can see it's wrong.
+Second, explain the root cause.
+Third, propose the smallest safe fix.
+
+Do not edit until I approve the fix. Then run node 06_control_structures.js again to confirm.
+
+Reflection: I just learned here how conditional statement works
