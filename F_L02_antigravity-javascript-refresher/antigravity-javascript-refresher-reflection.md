@@ -86,3 +86,19 @@ Create a browser verification checklist for 07_dom.html — how to open it, what
 Rewrite the button and setTimeout behavior as one React functional component, keeping the same behavior: button click asks for a color, background changes, paragraph updates after 2 seconds. Explain what changed from direct DOM mutation to state-driven UI.
 
 Reflection: I just learned here how DOM works, and i understand it much better now when i tried it in browser 
+
+### 08_essential_features.js
+Open 08_essential_features.js.
+
+Explain to me:
+1. How .map() transforms values.
+2. How destructuring reads object properties.
+3. How spread copies before adding.
+4. Why all three matter in React.
+Explain this line like I'm new to JavaScript:
+
+const newNumbers = [...numbers, 4, 5];
+
+Include what the ... does, whether the original array changes, and how this idea is used in React state updates.
+
+Reflection: I just learned here how to use and when to use spread method 
