@@ -111,11 +111,11 @@ In 09_tricky_parts.js, explain why obj.regularMethod() can read this.name but ob
 
 Reflection: 
 
-### 09_tricky_parts.js
-Open 09_tricky_parts.js.
+### 10_let_const.js
+OOpen 10_let_const.js. Review it for variable declaration style.
 
-Before running the file, create a prediction table for every console.log in it. Then run it with node and compare the actual output against my predictions.
-In 09_tricky_parts.js, explain why obj.regularMethod() can read this.name but obj.arrowMethod() cannot, and why copyByReference changes the original array but copyBySpread does not. Then add one extra example that proves the difference.
+Explain when to use const, when to use let, and why var should be avoided in modern JavaScript. Suggest exactly one improvement, no more.
+Find any var declarations in this project. Do not edit automatically. List each file and explain whether it can safely become let or const, then wait for my approval.
 
-Reflection: 
+Reflection: i just learned here the differences of const, let, and var
 
