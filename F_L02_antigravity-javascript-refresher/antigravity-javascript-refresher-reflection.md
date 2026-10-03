@@ -40,3 +40,14 @@ After editing, run node 03_functions.js for me.
 If anything fails, explain the error to me first before fixing it.
 
 Reflection: I learned here the difference of arrow function and the normal function
+
+
+### 04_objects
+Open 04_objects.js.
+
+I want to create an aboutMe object with name, age, course, and an introduce() method.
+
+Before writing the final code, explain to me why introduce() should be a regular function instead of an arrow function, since it needs to use this.name
+
+Reflection: Kailangan ng regular function ang introduce() para gumana ang this.name,at wala naman sariling this ang arrow function
+
