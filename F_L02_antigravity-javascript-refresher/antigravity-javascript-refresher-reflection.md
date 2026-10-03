@@ -51,3 +51,12 @@ Before writing the final code, explain to me why introduce() should be a regular
 
 Reflection: Kailangan ng regular function ang introduce() para gumana ang this.name,at wala naman sariling this ang arrow function
 
+### 05_arrays
+Implement 05_arrays.js using my own list of favorite snacks (at least 3 items).
+
+After running the file, explain to me:
+1. Which operation mutates the array.
+2. Which operation returns a new array instead.
+3. Why .map() matters before we get to React list rendering.
+
+Reflection: I learned here naman na which array methods change the original array and which return a new one
