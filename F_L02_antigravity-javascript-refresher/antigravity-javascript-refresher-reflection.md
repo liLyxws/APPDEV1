@@ -102,3 +102,20 @@ const newNumbers = [...numbers, 4, 5];
 Include what the ... does, whether the original array changes, and how this idea is used in React state updates.
 
 Reflection: I just learned here how to use and when to use spread method 
+
+### 09_tricky_parts.js
+Open 09_tricky_parts.js.
+
+Before running the file, create a prediction table for every console.log in it. Then run it with node and compare the actual output against my predictions.
+In 09_tricky_parts.js, explain why obj.regularMethod() can read this.name but obj.arrowMethod() cannot, and why copyByReference changes the original array but copyBySpread does not. Then add one extra example that proves the difference.
+
+Reflection: 
+
+### 09_tricky_parts.js
+Open 09_tricky_parts.js.
+
+Before running the file, create a prediction table for every console.log in it. Then run it with node and compare the actual output against my predictions.
+In 09_tricky_parts.js, explain why obj.regularMethod() can read this.name but obj.arrowMethod() cannot, and why copyByReference changes the original array but copyBySpread does not. Then add one extra example that proves the difference.
+
+Reflection: 
+
